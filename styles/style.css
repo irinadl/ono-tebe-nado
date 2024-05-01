@@ -1,4 +1,4 @@
-.header{
+.header {
     display: grid;
     grid-template-columns:repeat(5, 1fr);
     place-content:center;
@@ -10,7 +10,7 @@
     padding: 92px 24px 96px 24px;
  }
 
-.header_menu{
+.header_menu {
     grid-column-start: 1;
     grid-column-end: span 2;
     font-weight: 400;
@@ -19,44 +19,44 @@
     padding-left: 14px;
 }
 
-.header__links-list{
+.header__links-list {
     display: flex;
     flex-direction: row;
-    gap: 34px;    
+    gap: 34px;
     list-style-type:circle;
 }
 
-.header__links-list-item_no-bullit{
+.header__links-list-item_no-bullit {
     list-style-type: none;
 }
 
-.header__logo{
+.header__logo {
     display: block;
     grid-column-start: 3;
     grid-column-end: 4;
     width: 131px;
 }
 
-.header__logo-image{
+.header__logo-image {
     width: 100%;
 }
 
-.address{
-   font-weight: 400;
-   font-style: normal;
+.address {
+    font-weight: 400;
+    font-style: normal;
     font-size: 18px;
     line-height: 135%;
     color: #000;
 }
 
-.header .address{
+.header .address {
     grid-column-start: 4;
     grid-column-end: span 2;
     padding-left: 154px;
     padding-right: 35px;
 }
-.cover{
-    padding: 0;    
+.cover {
+    padding: 0;
     min-height: 757px;
     background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
@@ -65,7 +65,7 @@
     position: relative;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     inset: 0;  
     background: rgb(0, 0, 0, .6);
@@ -73,7 +73,7 @@
     width: 100%;
 }
 
-.cover__title{
+.cover__title {
     position: relative;
     z-index: 1;
     font-weight: 700;
@@ -84,35 +84,35 @@
     color: #fff;
 }
 
-.aligned-text{
+.aligned-text {
     display: block;
     padding-top: 165px;
     padding-left: 50px;
 }
 
-.aligned-text_center{
+.aligned-text_center {
     display: block;
     text-align: center;
     padding-top: 18px;
 }
 
-.aligned-text_right{
+.aligned-text_right {
     display: block;
     text-align: right;
 }
 
-.letter-spacing-extended{
+.letter-spacing-extended {
     letter-spacing: 0.6em;
 }
 
-.no-letter-spacing{
+.no-letter-spacing {
     letter-spacing: 0.3em;
 }
 
-.cover__description{
+.cover__description {
     position: relative;
     z-index: 1;
-    display: flex;   
+    display: flex;
     gap: 79px;
     align-items: center;
     justify-content: center;
@@ -120,17 +120,17 @@
     padding-left: 20px;
 }
 
-.cover__description-text{
+.cover__description-text {
     display:block;
     font-weight: 400;
     font-size: 22px;
-    line-height: 127%;   
-    word-spacing: 19px;    
+    line-height: 127%;
+    word-spacing: 19px;
     text-transform: uppercase;
     color: #fff;
 }
 
-.bet-button{
+.bet-button {
     box-sizing: border-box;
     background: transparent;
     border: 1px solid #fff;
@@ -143,11 +143,11 @@
     color: #fff;
 }
 
-.lots{
+.lots {
     padding: 179px 24px 0 24px;
 }
 
-.lots__card-list{
+.lots__card-list {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -157,14 +157,14 @@
     max-width: 1052px;
 }
 
-.lots__card-list-item{
+.lots__card-list-item {
     flex-basis: 300px;
 	min-height: 563px;
-    flex-grow: 1; 
+    flex-grow: 1;
     width: 100%;
 }
 
-.lots__heading{
+.lots__heading {
     padding-left: 40px;
     padding-bottom: 27px;
     font-weight: 700;
@@ -173,12 +173,12 @@
     color: #000;
 }
 
-.card-link{
+.card-link {
     display: block;
     text-decoration: none;
 }
 
-.card{
+.card {
     display: flex;
     position: relative;
     flex-direction: column;
@@ -197,7 +197,7 @@
     position: relative;
 }
 
-.card_type_book{
+.card_type_book {
     background-image: url(../images/card-lot-02.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -205,7 +205,7 @@
     position: relative;
 }
 
-.card_type_picture{
+.card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -213,7 +213,7 @@
     position: relative;
 }
 
-.card__title{
+.card__title {
     position: relative;
     z-index: 1;
     font-weight: 700;
@@ -225,7 +225,7 @@
     color: #fff;
 }
 
-.card__text{
+.card__text {
     position: relative;
     z-index: 1;
     font-weight: 400;
@@ -234,14 +234,14 @@
     color: #fff;
 }
 
-.lots__look-more-link{
+.lots__look-more-link {
     padding-left: 40px;
     font-weight: 400;
     font-size: 20px;
     color: #000;
 }
 
-.about{
+.about {
     padding: 0 24px;
     margin-top: 146px;
     display: grid;
@@ -253,7 +253,7 @@
     height: 595px;
 }
 
-.about__logo{
+.about__logo {
     grid-area: logo;
     margin-top: 35px;
     width: 240px;
@@ -264,17 +264,16 @@
     align-self: center;
 }
 
-.about__logo-image{
+.about__logo-image {
     display: block;
     width: 148px;
     height: 114px;
     margin-top: 65px;
     margin-left: 51px;
     margin-right: 51px;
-    margin-top: 65px;
 }
 
-.about__title{
+.about__title {
     grid-area: title;
     margin-top: 35px;
     padding-left: 27px;
@@ -286,7 +285,7 @@
     color: #000;
 }
 
-.about__text{
+.about__text {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -299,40 +298,40 @@
     color: #000;
 }
 
-.letter-spacing-extended-01{
+.letter-spacing-extended-01 {
    letter-spacing: 0.01em;
 }
 
-.letter-spacing-shrink-01{
+.letter-spacing-shrink-01 {
     letter-spacing: -0.01em;
 }
 
-.letter-spacing-extended-02{
+.letter-spacing-extended-02 {
     letter-spacing: 0.02em;
 }
 
-.letter-spacing-extended-03{
+.letter-spacing-extended-03 {
     letter-spacing: 0.03em;
 }
 
-.letter-spacing-extended-04{
+.letter-spacing-extended-04 {
     letter-spacing: 0.04em;
 }
 
-.footer{
+.footer {
     display: flex;
     min-height: 98px;
     min-width: 980px;
-    padding: 180px 70px 88px 50px; 
+    padding: 180px 71px 88px 50px;
     gap: 175px;
 }
 
-.footer .address{
+.footer .address {
     display: block;
     min-width: 240px;
 }
 
-.footer__menu{
+.footer__menu {
     display: block;
     min-width: 149px;
     font-weight: 400;
@@ -341,37 +340,37 @@
     color: #000;
 }
 
-.footer__menu-list{
+.footer__menu-list {
     text-align: center;
-    list-style-type: none;    
+    list-style-type: none;
 }
 
-.footer__social-list{
+.footer__social-list {
     display: flex;
     gap: 48px;
     list-style-type: none;
     min-width: 240px;
 }
 
-.footer__menu-link{
-    display: block;    
+.footer__menu-link {
+    display: block;
 }
 
-.footer__menu-link_active{
+.footer__menu-link_active {
     display: block;
     text-decoration: none;
 }
 
-.footer__social-list-item{
+.footer__social-list-item {
     display: block;
     width: 48px;
     height: 48px;
 }
 
-.footer__social-link{
+.footer__social-link {
     display: block;
 }
 
-.footer__social-icon{
+.footer__social-icon {
     width: 100%;
 }
