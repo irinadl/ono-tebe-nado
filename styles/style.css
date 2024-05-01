@@ -6,9 +6,9 @@
     font-weight: 400;
     font-size: 18px;
     color: #000;
-    height: 105px;
+    min-height: 105px;
     padding: 92px 24px 96px 24px;
-}
+ }
 
 .header_menu{
     grid-column-start: 1;
@@ -56,8 +56,7 @@
     padding-right: 35px;
 }
 .cover{
-    padding: 0;
-    margin-top: 47px;
+    padding: 0;    
     min-height: 757px;
     background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
@@ -103,7 +102,7 @@
 }
 
 .letter-spacing-extended{
-    letter-spacing: 0.6em;    
+    letter-spacing: 0.6em;
 }
 
 .no-letter-spacing{
@@ -119,7 +118,6 @@
     justify-content: center;
     padding-top: 130px;
     padding-left: 20px;
-
 }
 
 .cover__description-text{
@@ -129,7 +127,7 @@
     line-height: 127%;   
     word-spacing: 19px;    
     text-transform: uppercase;
-    color: #fff;  
+    color: #fff;
 }
 
 .bet-button{
@@ -156,7 +154,7 @@
     gap: 25px;
     width: 100%;
     flex-wrap: wrap;
-    max-width: 1052px;    
+    max-width: 1052px;
 }
 
 .lots__card-list-item{
@@ -177,7 +175,7 @@
 
 .card-link{
     display: block;
-    text-decoration: none;  
+    text-decoration: none;
 }
 
 .card{
@@ -263,7 +261,7 @@
     background-color: #000;
     border-radius: 100%;
     justify-self: center;
-    align-self: center;  
+    align-self: center;
 }
 
 .about__logo-image{
@@ -275,7 +273,6 @@
     margin-right: 51px;
     margin-top: 65px;
 }
-
 
 .about__title{
     grid-area: title;
@@ -299,16 +296,16 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 120%;
-  /*  letter-spacing: 0.01em;*/
     color: #000;
 }
+
 .letter-spacing-extended-01{
    letter-spacing: 0.01em;
 }
 
 .letter-spacing-shrink-01{
     letter-spacing: -0.01em;
- }
+}
 
 .letter-spacing-extended-02{
     letter-spacing: 0.02em;
@@ -324,12 +321,10 @@
 
 .footer{
     display: flex;
-    height: 98px;
-    width: 980px;
-    padding: 0 50px 88px 50px; 
-    margin-top: 182px;
-    margin-bottom: 88px;
-    gap: 185px;
+    min-height: 98px;
+    min-width: 980px;
+    padding: 180px 70px 88px 50px; 
+    gap: 175px;
 }
 
 .footer .address{
