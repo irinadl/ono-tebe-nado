@@ -150,7 +150,7 @@
     border: 1px solid currentColor;
     width: 256px;
     height: 51px;
-    font-family: Arial;
+ /*   font-family: Arial;  в нашем макете щрифт  Ralevay https://disk.yandex.ru/i/RYBZZT-ifFiV1g */
     font-weight: 500;
     font-size: 22px;
     text-transform: uppercase;
@@ -303,11 +303,11 @@
     color: #000;
 }
 
-.letter-spacing-extended-01 {
+.letter-spacing-extended-one {
    letter-spacing: 0.01em;
 }
 
-.letter-spacing-shrink-01 {
+.letter-spacing-shrink-one {
     letter-spacing: -0.01em;
 }
 
