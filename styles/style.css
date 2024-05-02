@@ -33,7 +33,7 @@
 }
 
 .header__link_active {
-    text-decoration: none;    
+    text-decoration: none;
 }
 
 .header__logo {
@@ -205,7 +205,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position: relative;
 }
 
 .card_type_film {
