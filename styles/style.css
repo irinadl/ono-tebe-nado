@@ -325,9 +325,10 @@
 
 .footer {
     display: flex;
+    justify-content: space-between;
     min-width: 980px;
     padding: 180px 71px 88px 50px;
-    gap: 175px;
+   /* gap: 175px;*/
 }
 
 .footer .address {
