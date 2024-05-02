@@ -1,22 +1,20 @@
 .header {
     display: grid;
-    grid-template-columns:repeat(5, 1fr);
-    place-content:center;
+    grid-template-columns: 1fr min-content 1fr;
     place-items: center;
     font-weight: 400;
     font-size: 18px;
     color: #000;
-    min-height: 105px;
-    padding: 92px 24px 96px 24px;
+    padding: 92px 50px 96px 50px;
  }
 
 .header_menu {
     grid-column-start: 1;
-    grid-column-end: span 2;
+    grid-column-end: 2;
+    justify-self: start;
     font-weight: 400;
     font-size: 18px;
     color: #000;
-    padding-left: 14px;
 }
 
 .header__links-list {
@@ -30,10 +28,18 @@
     list-style-type: none;
 }
 
+.header_link {
+    display: block;
+}
+
+.header__link_active {
+    text-decoration: none;    
+}
+
 .header__logo {
     display: block;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
     width: 131px;
 }
 
@@ -47,14 +53,15 @@
     font-size: 18px;
     line-height: 135%;
     color: #000;
+    width: 240px;
 }
 
 .header .address {
-    grid-column-start: 4;
-    grid-column-end: span 2;
-    padding-left: 154px;
-    padding-right: 35px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    justify-self: end;
 }
+
 .cover {
     padding: 0;
     min-height: 757px;
@@ -76,6 +83,12 @@
 .cover__title {
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 165px;
     font-weight: 700;
     font-size: 100px;
     line-height: 115%;
@@ -86,19 +99,19 @@
 
 .aligned-text {
     display: block;
-    padding-top: 165px;
-    padding-left: 50px;
+    line-height: 115%;
 }
 
 .aligned-text_center {
     display: block;
     text-align: center;
-    padding-top: 18px;
+    line-height: 100%;
 }
 
 .aligned-text_right {
     display: block;
     text-align: right;
+    line-height: 100%;
 }
 
 .letter-spacing-extended {
@@ -106,7 +119,7 @@
 }
 
 .no-letter-spacing {
-    letter-spacing: 0.3em;
+    letter-spacing: 0;
 }
 
 .cover__description {
@@ -115,9 +128,10 @@
     display: flex;
     gap: 79px;
     align-items: center;
-    justify-content: center;
-    padding-top: 130px;
-    padding-left: 20px;
+    justify-content: end;
+    padding-top: 135px;
+    padding-right: 50px;
+    padding-left: 78px;
 }
 
 .cover__description-text {
@@ -125,7 +139,7 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 127%;
-    word-spacing: 19px;
+    word-spacing: 18px;
     text-transform: uppercase;
     color: #fff;
 }
@@ -133,9 +147,10 @@
 .bet-button {
     box-sizing: border-box;
     background: transparent;
-    border: 1px solid #fff;
+    border: 1px solid currentColor;
     width: 256px;
     height: 51px;
+    font-family: Arial;
     font-weight: 500;
     font-size: 22px;
     text-transform: uppercase;
@@ -186,31 +201,23 @@
     padding: 51px 40px 48px 40px;
     margin-bottom: 30px;
     width: 334px;
-    height: 563px;
+    min-height: 563px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
 .card_type_film {
     background-image: url(../images/card-lot-01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
 }
 
 .card_type_book {
     background-image: url(../images/card-lot-02.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
 }
 
 .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
 }
 
 .card__title {
@@ -250,7 +257,6 @@
     grid-template-areas: 
     "logo title"
     "empty text";
-    height: 595px;
 }
 
 .about__logo {
@@ -259,7 +265,7 @@
     width: 240px;
     height: 240px;
     background-color: #000;
-    border-radius: 100%;
+    border-radius: 50%;
     justify-self: center;
     align-self: center;
 }
@@ -320,7 +326,6 @@
 
 .footer {
     display: flex;
-    min-height: 98px;
     min-width: 980px;
     padding: 180px 71px 88px 50px;
     gap: 175px;
